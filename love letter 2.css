@@ -7,10 +7,13 @@
   margin-left: auto;
   margin-right: auto;
   top: 150px;
-  background-color: #d9534f; /* Warm romantic red */
+  background-color: #4f92d9; /* Warm romantic red */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
+.scale-wrapper {
+  transform: scale(1.5);   /* 🔼 increase size */
+  transform-origin: top center;
+}
 .front {
   position: absolute;
   width: 0;
@@ -23,16 +26,16 @@
   border-right: 140px solid transparent;
   border-bottom: 82px solid transparent;
   /* a little smaller */
-  border-top: 98px solid #d9534f; /* Same romantic red */
+  border-top: 98px solid #4fd2d9; /* Same romantic red */
   /* a little larger */
   transform-origin: top;
   pointer-events: none;
 }
 
 .pocket {
-  border-left: 140px solid #f5a3a2; /* Soft pinkish red for the pocket */
-  border-right: 140px solid #f5a3a2;
-  border-bottom: 90px solid #ff6f61; /* Lighter romantic red */
+  border-left: 140px solid #a2ebf5; /* Soft pinkish red for the pocket */
+  border-right: 140px solid #a2e2f5;
+  border-bottom: 90px solid #61e5ff; /* Lighter romantic red */
   border-top: 90px solid transparent;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -41,15 +44,26 @@
 .letter {
   position: relative;
   background-color: #fff;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 90%;
+  width: 85%;
+  margin: auto;
+  height: 75%;
   top: 5%;
   border-radius: 6px;
   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
   font-family: "Dancing Script", cursive;
+
+  padding: 15px;
+  overflow-y: auto;        /* ✅ infinite content */
+  overflow-x: hidden;
 }
+.letter p {
+
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 0.7rem;
+  color: #444;
+}
+
 
 .letter:after {
   content: "";
@@ -141,7 +155,7 @@
   top: 0;
   width: 50px;
   height: 80px;
-  background: #e60073; /* Deep romantic pink */
+  background: #ff78e2; /* Deep romantic pink */
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
