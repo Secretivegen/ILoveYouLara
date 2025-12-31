@@ -11,7 +11,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .scale-wrapper {
-  transform: scale(3.5);   /* 🔼 increase size */
+  transform: scale(2.5);   /* 🔼 increase size */
   transform-origin: top center;
 }
 .front {
@@ -285,5 +285,6 @@ body {
   background-color: #d9534f;
   color: #fff;
 }
+
 
 
